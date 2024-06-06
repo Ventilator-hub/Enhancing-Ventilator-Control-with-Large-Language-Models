@@ -1,0 +1,33 @@
+Patient Demographics:
+- Age: [first_admit_age] years old, gender: [gender], weight: [weight] kg, ICU readmission: [icu_readm]
+
+Comorbidity Assessment:
+- Elixhauser Comorbidity Index: [elixhauser_score]
+
+Disease Severity Scores:
+- SOFA (Sequential Organ Failure Assessment) score: [sofa]
+- SIRS (Systemic Inflammatory Response Syndrome) score: [sirs]
+- APACHE II (Acute Physiology and Chronic Health Evaluation II) score: [apache2_score]
+- Glasgow Coma Scale (GCS) score: [gcs]
+
+Vital Signs:
+- Heart rate: [heartrate] bpm, Shock Index: [shockindex]
+- Blood pressure (SBP/DBP/MAP): [sysbp]/[diasbp]/[meanbp] mmHg
+- Respiratory rate: [resprate] breaths/min
+- Temperature: [tempc]°C, SpO2: [spo2]%
+
+Laboratory Results:
+- Electrolytes: K+ [potassium], Na+ [sodium], Cl- [chloride], Mg2+ [magnesium] mmol/L
+- Glucose: [glucose] mg/dL
+- Renal function: BUN [bun], Creatinine [creatinine] mg/dL
+- Arterial Blood Gas: pH [ph], PaCO2 [paco2] mmHg, Base Excess [base_excess] mmol/L, HCO3- [bicarbonate] mmol/L
+- Complete Blood Count: Hb [hemoglobin] g/dL, WBC [wbc], Platelets [platelet] 10^9/L
+- Coagulation: PT [pt] sec, aPTT [ptt] sec, INR [inr]
+
+Fluid Balance:
+- Urine output: [urineoutput] mL/day
+- Total IV fluid intake: [iv_total] mL, Cumulative fluid balance: [cum_fluid_balance] mL
+- Vasoactive agents: [vaso_total] (specific drugs and dosages not provided)
+
+Outcome Prediction:
+- 90-day in-hospital mortality risk: [hospmort90day] (0 indicates predicted survival)
