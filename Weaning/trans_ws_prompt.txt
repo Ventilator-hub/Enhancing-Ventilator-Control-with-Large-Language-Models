@@ -1,0 +1,29 @@
+Task Overview:
+- Simulate data for a randomly generated patient undergoing mechanical ventilation.
+- The simulation should authentically capture the trial-and-error process of adjusting ventilatory settings to find the most effective weaning plan.
+- Initially, focus on providing the patient with normal, comfortable respiration and gradually adjust settings for weaning.
+- The initial state of the data should reflect a realistic scenario where the patient has just started on mechanical ventilation and is not yet adequately supported, in line with their diagnosis.
+
+Patient Details:
+- Gender: Randomly select (0/1)
+- Age: Randomly generate (between 45 and 85 years)
+- Diagnosis: Choose a realistic diagnosis that typically necessitates ICU respiratory support. This could be a respiratory system disease or respiratory difficulties resulting from complications arising from certain other diseases
+
+Simulation Period:
+- Start with the patient's initial state of just beginning mechanical ventilation support, not yet optimized.
+- Randomly generate a start date and time, lasting 2 hours, with data points every 30 minutes.
+
+Required Data Fields:
+- Time Stamp (e.g., "YYYY-MM-DD HH:MM:SS")
+- Ventilatory Parameters (including VTI, VTE, SPO2, RATE, FSPN, MVSPN, PPEAK, PMEAN, PPLAT, VTESPN)
+- Settings (including SET_VENTMODE, SET_PINSP, SET_SLOPE, SET_TINS, SET_PSUPP, SET_PEEP, SET_TRIGGERFLOW, SET_FIO2)
+- IsSuitable: A Boolean value determined by the logical consistency and clinical appropriateness of the adjustments at each point
+
+Data Generation Guidelines:
+- Initial State: Begin with the patient in a state that matches their diagnosis, showing they have just started on mechanical ventilation without adequate support. This sets the baseline from which adjustments will improve or modify the patient's condition.
+- Primary Consideration: Prioritize providing the patient with comfortable breathing at the start. Subsequently, make slow, deliberate adjustments to the settings to facilitate gradual weaning.
+- Introduce both effective and suboptimal adjustments to reflect the trial-and-error nature of clinical decision-making in real life. Not all changes should lead to improvement; some may initially worsen parameters or have no effect, necessitating further evaluation and adjustment.
+- The IsSuitable field should indicate whether the adjustments at each time point are beneficial (true) or not (false), acknowledging that occasional setbacks are a natural part of a realistic clinical scenario.
+
+Example Data Point:
+[data point]
