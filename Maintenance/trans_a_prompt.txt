@@ -1,0 +1,4 @@
+Ventilation Parameters:
+- Fraction of Inspired Oxygen (FiO2): [fio2]%
+- Positive End-Expiratory Pressure (PEEP): [peep] cmH2O
+- Tidal Volume adjusted for the patient's Predicted Body Weight: [adjusted_tidal_volume] mL/kg
